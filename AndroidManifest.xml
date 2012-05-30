@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:a="http://schemas.android.com/apk/res/android"
+    package="com.htc.sample.hwwebview"
+    a:versionCode="2"
+    a:versionName="2.0" >
+
+    <uses-sdk a:minSdkVersion="3" a:targetSdkVersion="15" />
+
+    <uses-permission a:name="android.permission.INTERNET" />
+    
+    <application
+        a:icon="@drawable/ic_launcher"
+        a:label="@string/app_name" 
+		a:hardwareAccelerated="true"
+        >
+        <activity
+            a:name=".Viewer"
+            a:label="@string/app_name" >
+            <intent-filter>
+                <action a:name="android.intent.action.MAIN" />
+
+                <category a:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
